@@ -1,3 +1,11 @@
+# Step 1: initialize with local backend
+# terraform {
+#   backend "local" {
+#     path = "terraform.tfstate"
+#   }
+# }
+# Step 2: migrate to remote azurerm backend using:
+# terraform init -migrate-state
 terraform {
   required_version = ">= 1.8.4"
 
